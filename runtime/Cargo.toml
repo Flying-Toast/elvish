@@ -1,0 +1,19 @@
+[package]
+name = "runtime"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasm-bindgen = "0.2.82"
+
+[dependencies.web-sys]
+version = "0.3.59"
+features = [
+	"DocumentFragment",
+	"Text",
+	"Node",
+	"HtmlButtonElement",
+	"Document",
+	"Element",
+	"Window",
+]

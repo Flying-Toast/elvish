@@ -1,0 +1,11 @@
+<rust>
+	ctx! {
+		count: u32 = 0,
+	}
+
+	fn handle_click(ctx: &mut Ctx) {
+		*ctx.count += 1;
+	}
+</rust>
+
+<button on:click={handle_click}>Clicked {count} time(s)</button>
